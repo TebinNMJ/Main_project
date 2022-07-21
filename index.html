@@ -1,0 +1,339 @@
+<?php 
+include "config.php";
+if(isset($_SESSION['login_id']))
+{
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Dust 2 Shine</title>
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Favicon
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="hm/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="hm/img/favicon.png">
+
+    <!-- Stylesheets
+    ================================================== -->
+    <!-- Bootstrap core CSS -->
+    <link href="hm/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="hm/css/style.css" rel="stylesheet">
+    <link href="hm/css/responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header id="masthead" class="site-header">
+        <nav id="primary-navigation" class="site-navigation">
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <a class="site-title" style="font-size: 30px"><span>Dust 2</span>Shine</a>
+
+                </div><!-- /.navbar-header -->
+
+                <div class="collapse navbar-collapse" id="agency-navbar-collapse">
+
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li class="active"><a href="index.html" data-toggle="dropdown">Home</a></li>
+                        <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<i
+                                    class="fa fa-caret-down hidden-xs" aria-hidden="true"></i></a>
+
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                                <li><a href="hm/portfolio.html">Laundry Washing</a></li>
+                                <li><a href="hm/portfolio.html">Ironing</a></li>
+                                <!-- <li><a href="hm/portfolio.html">Dry Cleaning</a></li>
+                                <li><a href="hm/portfolio.html">Coloring</a></li> -->
+                            </ul>
+
+                        </li>
+                        <!-- <li><a href="hm/portfolio.html">Images</a></li> -->
+                        <li><a href="hm/contact.html">Contact</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register Here</a></li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav><!-- /.site-navigation -->
+    </header><!-- /#mastheaed -->
+
+    <div id="hero" class="hero overlay">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Make Your Day Fresh.</h1>
+                <p>Make Youreself Feel Comfortable.</p>
+                <!-- <button> <a href="contact.html" class="btn btn-border">Learn more</a></button>-->
+                <button class="btn btn-border" type="submit"><a href="hm/portfolio.html"
+                        style="text-decoration-color: white">Learn More</a> </button>
+            </div><!-- /.hero-text -->
+        </div><!-- /.hero-content -->
+    </div><!-- /.hero -->
+
+    <main id="main" class="site-main">
+
+        <section class="site-section section-features">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <h2>Laundry Service</h2>
+                        <p>We use state-of-the-art front loading washing machines and premium detergents for wash fold
+                            and laundry services to give your clothes that special care it needs.</p>
+                    </div>
+                    <div class="col-sm-7 hidden-xs">
+                        <img src="hm/img/wash.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section><!-- /.section-features -->
+
+        <section class="site-section section-services gray-bg text-center">
+            <div class="container">
+                <h2 class="heading-separator">How It Works: in 4 Easy Steps</h2>
+                <p class="subheading-text">See our service</p>
+                <div class="row">
+                    <div class="col-md-3 col-xs-6">
+                        <div class="service">
+                            <img src="hm/img/w1.png" alt="">
+                            <h3 class="service-title">Step 1</h3>
+                            <p class="service-info"> Bag up all your dirty clothes.</p>
+                        </div><!-- /.service -->
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="service">
+                            <img src="hm/img/w2.png" alt="">
+                            <h3 class="service-title">Step 2</h3>
+                            <p class="service-info">We pick up your clothes. </p>
+                        </div><!-- /.service -->
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="service">
+                            <img src="hm/img/w3.png" alt="">
+                            <h3 class="service-title">Step 3</h3>
+                            <p class="service-info">We clean your clothes.</p>
+                        </div><!-- /.service -->
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="service">
+                            <img src="hm/img/w4.png" alt="">
+                            <h3 class="service-title">Step 4</h3>
+                            <p class="service-info">We deliver clean, folded clothes.</p>
+                        </div><!-- /.service -->
+                    </div>
+
+                </div>
+            </div>
+        </section><!-- /.section-services -->
+
+        <section class="site-section section-map-feature text-center">
+
+            <div class="container">
+                <h2>We Make yourself feel confident</h2>
+                <p>Freshness Throughout The Day</p>
+                <a href="#" class="btn btn-fill">Learn More</a>
+                <div class="row">
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="counter-item">
+                            <p class="counter" data-to="377" data-speed="2000">0</p>
+                            <h3>Review</h3>
+                        </div><!-- /.counter-item -->
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="counter-item">
+                            <p class="counter" data-to="1204" data-speed="2000">0</p>
+                            <h3>Works completed</h3>
+                        </div> <!-- /.counter-item -->
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="counter-item">
+                            <p class="counter" data-to="459" data-speed="1000">0</p>
+                            <h3>Happy Clients</h3>
+                        </div><!-- /.counter-item -->
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <div class="counter-item">
+                            <p class="counter" data-to="675" data-speed="1000">0</p>
+                            <h3>Average Deal</h3>
+                        </div><!-- /.counter-item -->
+                    </div>
+                </div>
+            </div>
+
+        </section><!-- /.section-map-feature -->
+
+        <section class="site-section section-portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="heading-separator">Our Work</h2>
+                    <p class="subheading-text"> some of our work</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="hm/img/l1.jpg" class="img-res" alt="">
+                            <!--<h4 class="portfolio-item-title">Portfolio item</h4>-->
+                            <a><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="hm/img/l2.jpg" class="img-res" alt="">
+                            <!--<h4 class="portfolio-item-title">Portfolio item</h4>-->
+                            <a><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="hm/img/l3.jpg" class="img-res" alt="">
+                            <!-- <h4 class="portfolio-item-title">Portfolio item</h4>-->
+                            <a><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="hm/img/l4.jpg" class="img-res" alt="">
+                            <!-- <h4 class="portfolio-item-title">Portfolio item</h4>-->
+                            <a><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="hm/img/l5.jpg" class="img-res" alt="">
+                            <!-- <h4 class="portfolio-item-title">Portfolio item</h4>-->
+                            <a><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="hm/img/l6.jpg" class="img-res" alt="">
+                            <!-- <h4 class="portfolio-item-title">Portfolio item</h4>-->
+                            <a><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="hm/img/l3.jpg" class="img-res" alt="">
+                            <!--<h4 class="portfolio-item-title">Portfolio item</h4>-->
+                            <a><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6">
+                        <div class="portfolio-item">
+                            <img src="hm/img/l8.jpg" class="img-res" alt="">
+                            <!-- <h4 class="portfolio-item-title">Portfolio item</h4>-->
+                            <a><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div><!-- /.portfolio-item -->
+                    </div>
+                </div>
+            </div>
+        </section><!-- /.section-portfolio -->
+
+        <!-- <section class="site-section section-newsletter text-center">
+            <div class="container">
+                <h2>Subscribe for Enquires</h2>
+                <form class="form-group newsletter-group">
+                    <input type="email" class="form-control" placeholder="Your e-mail" required>
+                    <button class="btn btn-green" type="button">Subscribe</button>
+                </form>
+            </div>
+        </section> -->
+
+    </main><!-- /#main -->
+
+    <footer id="colophon" class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                    <a class="site-title"><span>WHY WE ARE </span>THE BEST ?</a>
+                    <p>We are striving continuously to provide you with laundry and dry-cleaning services for garments,
+                        shoes and bags that are at unique and one of its own kind</p>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                    <a class="site-title"><span>Free </span>Pickup Drop</a>
+                    <p>Free pick-up and delivery at your doorsteps so that you can enjoy hassle-free dry cleaning and
+                        laundry services.</p>
+                    <br>
+                    <a class="site-title"><span>Fast </span>Processing</a>
+                    <p>We ensure that you get your articles processed within committed time. Most of our processes have
+                        been automated to ensure same experience every time</p>
+
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-6">
+                    <a class="site-title"><span>CUSTOM PACKAGING </span>PACKAGING</a>
+                    <p>Each article is returned to you individually packaged to protect against dust, light and
+                        mildew./p>
+                        <br>
+                        <br>
+                        <a class="site-title"><span>AFFORDABLE </span></a>
+                    <p>Daily Fresh is a quick, efficient and cost effective way for your dry cleaning needs. Online
+                        laundry space was never that affordable.</p>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-8">
+
+                    </div>
+                    <div class="col-xs-4">
+
+                    </div>
+                </div>
+            </div><!-- /.copyright -->
+            <center><br><br>
+<table border=0 bgcolor=#03B189 width=80%>
+<tr><td style="text-align: center;" >Designed by Tebin Joseph</td></tr>
+<tr><td><hr></td></tr>
+</table>
+</center>
+
+    </footer><!-- /#footer -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="hm/js/bootstrap.min.js"></script>
+    <script src="hm/js/bootstrap-select.min.js"></script>
+    <script src="hm/js/jquery.slicknav.min.js"></script>
+    <script src="hm/js/jquery.countTo.min.js"></script>
+    <script src="hm/js/jquery.shuffle.min.js"></script>
+    <script src="hm/js/script.js"></script>
+
+</body>
+
+</html>
+<?php
+}
+?>
